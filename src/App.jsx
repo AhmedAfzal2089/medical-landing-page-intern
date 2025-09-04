@@ -1,3 +1,4 @@
+import ChooseUs from "./components/ChooseUs";
 import ConsultingSpec from "./components/ConsultingSpec";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <ConsultingSpec />
+      <ChooseUs />
     </>
   );
 };
