@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import OurMember from "./components/OurMember";
 import QualityHealth from "./components/QualityHealth";
+import SubscribeNews from "./components/SubscribeNews";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <ChooseUs />
       {/* <OurMember /> */}
       <QualityHealth />
+      <SubscribeNews />
     </>
   );
 };
