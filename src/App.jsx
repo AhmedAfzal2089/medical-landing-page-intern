@@ -1,5 +1,6 @@
 import ChooseUs from "./components/ChooseUs";
 import ConsultingSpec from "./components/ConsultingSpec";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import OurMember from "./components/OurMember";
@@ -16,6 +17,7 @@ const App = () => {
       {/* <OurMember /> */}
       <QualityHealth />
       <SubscribeNews />
+      <Footer />
     </>
   );
 };
