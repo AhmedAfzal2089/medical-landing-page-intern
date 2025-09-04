@@ -1,23 +1,29 @@
 import React, { useState } from "react";
-import MainLogo from "../assets/logo";
+import NavLogo from "../svgs/NavLogo";
 
 const Navbar = () => {
   const [MobileMode, setMobileMode] = useState(false);
 
   return (
-    <nav className="lg:h-20 h-15 flex justify-around items-center px-4 md:px-8">
+    <nav className="lg:h-20 h-15 flex justify-around items-center px-4 md:px-8 bg-blue-100">
       <div>
-        <MainLogo />
+        <NavLogo />
       </div>
 
       <div className="hidden md:flex items-center gap-5">
-        <span className="cursor-pointer">Home</span>
-        <span className="cursor-pointer">Features</span>
-        <span className="cursor-pointer">Community</span>
-        <span className="cursor-pointer">Blog</span>
-        <span className="cursor-pointer">Pricing</span>
-        <span className="bg-green-400 py-2 px-4 rounded-md cursor-pointer">
-          Register Now
+        <span className="cursor-pointer text-blue-600 font-semibold border-b-3 border-blue-600">
+          Home
+        </span>
+        <span className="cursor-pointer">About</span>
+        <span className="cursor-pointer">Application</span>
+        <span className="cursor-pointer">History</span>
+      </div>
+      <div className="flex items-center justify-center gap-3">
+        <span className="py-2 px-4 cursor-pointer border-1 border-blue-600 rounded-3xl text-blue-600 font-semibold">
+          Login
+        </span>
+        <span className="bg-blue-600 text-white py-2 px-4 cursor-pointer border-1 border-blue-600 rounded-3xl font-semibold">
+          SignUp
         </span>
       </div>
 
@@ -56,14 +62,12 @@ const Navbar = () => {
 
       {MobileMode && (
         <div className="absolute top-20 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden z-50">
-          <span className="cursor-pointer">Home</span>
-          <span className="cursor-pointer">Features</span>
-          <span className="cursor-pointer">Community</span>
-          <span className="cursor-pointer">Blog</span>
-          <span className="cursor-pointer">Pricing</span>
-          <span className="bg-green-400 py-2 px-4 rounded-md cursor-pointer">
-            Register Now
+          <span className="cursor-pointer text-blue-600 font-semibold border-b-3 border-blue-600">
+            Home
           </span>
+          <span className="cursor-pointer">About</span>
+          <span className="cursor-pointer">Application</span>
+          <span className="cursor-pointer">History</span>
         </div>
       )}
     </nav>
